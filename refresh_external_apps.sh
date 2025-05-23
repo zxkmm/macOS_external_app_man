@@ -64,7 +64,7 @@ while IFS= read -r symlink_path; do
     app_name=$(basename "$symlink_path")
     
     if [ ! -e "$target" ]; then
-        echo "added invalid softlink: $app_name -> $target (non-existent)"
+        echo "removed invalid softlink: $app_name -> $target (non-existent)"
         rm "$symlink_path"
         if [ $? -eq 0 ]; then
             ((removed_count++))
