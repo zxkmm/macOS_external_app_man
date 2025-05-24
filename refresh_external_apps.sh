@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # set info
-SOURCE_DIR="/Volumes/kioxia/apps/"
+SOURCE_DIR=""
 TARGET_DIR="$HOME/Applications"
 
 # if info empty
