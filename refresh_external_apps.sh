@@ -2,7 +2,11 @@
 
 # set info
 SOURCE_DIR=""
-TARGET_DIR="$HOME/Applications"
+# TARGET_DIR="$HOME/Applications"
+TARGET_DIR="/Applications" 
+# start with macOS 26, 
+#the $HOME/Applications dir aren't detected by LaunchServices anymore, 
+#so can only link into /Applications
 
 # if info empty
 EMPTY_COUNT=0
